@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Nav Bar.js" defer></script> 
+    <link rel="icon" type="image/x-icon" href="/Prepro/logos/PtF logo v1.png">
+</head>
+
+<body>
+  <template id="header-template">
+    <header>
+      <nav>
+        <div>
+          <button>
+            <a href="Home.html">
+              <img class="home-logo" src="/Prepro/logos/PtF logo v1.png">
+            </a>
+          </button>
+        </div>
+
+        <div class="menu-header" id="menuToggle">
+          <button class="arrow" id="arrow" aria-expanded="false">▲</button>
+        </div>
+        <div class="menu-content" id="menuContent">
+          <ul>
+            <li><a class="links" href="Home.html" title="Home">Home</a></li>
+            <li><a class="links" href="Archive.html" title="Archive">Archive</a></li>
+            <li><a class="links" href="Latest.html" title="Latest Pg">Latest</a></li>
+            <li><a class="links" href="Random.html" title="Random Pg">Random</a></li>
+            <li><a class="links" href="https://euniceartstuff.wixsite.com/main" title="Portfolio" target="_blank">Portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </template>
+
+  <template id="footer-template">
+    <footer class="menu-content" id="footer">
+      <div class="sns-footer">
+        <button class="sns instagram">
+          <a href="https://www.instagram.com/eunice_the_weeb/" title="Read on Instagram" target="_blank">
+            <img class="social-icons" src="/Prepro/logos/insta logo.png">
+          </a>
+        </button>
+        <button class="sns twitter">
+          <a href="https://twitter.com/Eunice_the_Weeb" title="Read on Twitter" target="_blank">
+            <img class="social-icons" src="/Prepro/logos/Twitter logo.png">
+          </a>
+        </button>
+        <button class="sns tapas">
+          <a href="https://tapas.io/series/Path-to-Fluency/info" title="Read on Tapas" target="_blank">
+            <img class="social-icons" src="/Prepro/logos/Tapas-logo.png">
+          </a>
+        </button>
+        <button class="sns webtoon">
+          <a href="https://www.webtoons.com/en/canvas/path-to-fluency/list?title_no=923748" title="Read on Webtoon" target="_blank">
+            <img class="social-icons" src="/Prepro/logos/Webtoon logo.png">
+          </a>
+        </button>
+        <button class="sns portfolio">
+          <a href="https://euniceartstuff.wixsite.com/main" title="Portfolio" target="_blank">Portfolio</a>
+        </button>
+      </div>
+    </footer>
+  </template>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+            // Check header
+            const headerTemplate = document.getElementById('header-template');
+            if (headerTemplate) {
+                const headerClone = document.importNode(headerTemplate.content, true);
+                const headerElement = document.createElement('div');
+                headerElement.appendChild(headerClone);
+                document.body.insertAdjacentElement('afterbegin', headerElement);
+                console.log('Header component inserted');
+            } else {
+                console.error('Header template not found');
+            }
+
+            // Check footer
+            const footerTemplate = document.getElementById('footer-template');
+            if (footerTemplate) {
+                const footerClone = document.importNode(footerTemplate.content, true);
+                const footerElement = document.createElement('div');
+                footerElement.id = 'debug-container'; // For visibility
+                footerElement.appendChild(footerClone);
+                document.body.insertAdjacentElement('beforeend', footerElement);
+                console.log('Footer component inserted');
+            } else {
+                console.error('Footer template not found');
+            }
+        });
+  </script>
+
+</body>
+</html>

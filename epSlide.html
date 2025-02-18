@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/Prepro/logos/PtF logo v1.png">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <!--MARK: CHANGE-->
+  <title>EP 00</title>
+</head>
+
+<!--MARK: CHANGE-->
+<body>
+  <main>
+    <div class="main">
+      <h1>EP 00: Title</h1>
+      <ul>
+        <li>
+          <button class="top-btns">Previous</button>
+        </li>
+        <li>
+          <button class="top-btns" id="randomPg">Random</button>
+        </li>
+        <li>
+          <button class="top-btns switch"><a href="03 Page template (Scroll).html">Scroll</a></button>
+        </li>
+        <li>
+          <button class="top-btns">Next</button>
+        </li>
+      </ul>
+  
+      <div class="page-nav">
+        <button class="page-nav" id="prev-pg"><span class="icon-label">
+          ←</span>
+        </button>
+  
+        <div class="container">
+          <div class="carousel-wrapper">
+            <div class="carousel">
+              <img id="pg1" class="carousel-pg" src="\Episodes\01\SNS\9.jpg" alt="01-1">
+              <img id="pg2" class="carousel-pg" src="\Episodes\01\SNS\10.jpg" alt="01-2">
+              <img id="pg3" class="carousel-pg" src="\Episodes\01\SNS\11.jpg" alt="01-3">
+              <img id="pg4" class="carousel-pg" src="\Episodes\01\SNS\12.jpg" alt="01-4">
+              <img id="pg5" class="carousel-pg" src="\Episodes\01\SNS\13.jpg" alt="01-5">
+              <img id="pg6" class="carousel-pg" src="\Episodes\01\SNS\14.jpg" alt="01-6">
+              <img id="pg7" class="carousel-pg" src="\Episodes\01\SNS\15.jpg" alt="01-7">
+              <img id="pg8" class="carousel-pg" src="\Episodes\01\SNS\16.jpg" alt="01-8">
+            </div>
+          </div>
+        </div>
+  
+        <button class="page-nav"  id="next-pg"><span class="icon-label">
+          →</span></button>
+      </div>
+  
+      <div class="slider-container">
+        <input type="range" id="carousel-slider" min="1" max="8" step="1" value="1">
+        <div id="tooltip" class="tooltip"></div>
+    </div>
+  
+      <ul>
+        <li>
+          <button class="bottom-btns">Previous</button>
+        </li>
+        <li>
+          <button  class="bottom-btns" id="randomPg">Random</button>
+        </li>
+        <li>
+          <button class="bottom-btns switch"><a href="03 Page template (Scroll).html">Scroll</a></button>
+        </li>
+        <li>
+          <button class="bottom-btns">Next</button>
+        </li>
+      </ul>
+      <h2 class="date">Uploaded dd/mm/yy</h2>
+      <h2 class="comment">Comment from creator</h2>
+    </div>
+  </main>
+</body>
+</html>

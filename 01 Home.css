@@ -1,0 +1,264 @@
+
+/*MARK: About comic*/
+
+h2 {
+  margin: .5rem 0rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+
+}
+
+/*MARK: read comic*/
+.hl {
+  border-top: 2px solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  width: 80%;
+}
+
+.info {
+  display: flex;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+button {
+  margin: .5rem;
+}
+
+.site,
+.sns {
+  display: inline-flex;
+  margin: 1rem;
+}
+
+.sns {
+  background: transparent;
+  border: none;
+  display: inline-flex;
+}
+
+.sns:hover {
+  background: transparent;
+  opacity: 75%;
+  border: none;
+}
+
+.read-now {
+  padding: 1.5rem 3rem;
+}
+
+.vl {
+  border-left: solid ;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  height: 15rem;
+  margin: 0rem;
+}
+
+.read {
+  color: #66D9B3;
+}
+
+.read:hover {
+  color: #FDF0C8;
+  transition: inherit;
+}
+
+.latest {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  padding: 0.5rem 1.5rem;
+}
+
+.archive,
+#randomPg {
+  font-size: 1.5rem;
+  display: inline-flex;
+  padding: 0.5rem .75rem;
+}
+
+.social-icons {
+  width: 6rem;
+  height: auto;
+}
+
+/*MARK: About artist*/
+.artist {
+  display: flex;
+  padding: 3rem 0rem;
+  margin-bottom: 10rem;
+  position: relative;
+  transform: translateX(-13.75%);
+}
+
+.img {
+  width: 50%;
+  height: auto;
+  padding-bottom: 2rem;
+  pointer-events: none;
+}
+
+.about {
+  background-color: white;
+  width: 35%;
+  height: auto;
+  padding: 1.5rem 2.5rem;
+  position: absolute;
+  z-index: 9;
+  top: 20%;
+  transform: translateX(75%);
+}
+
+.about > h2 {
+  margin: .5rem;
+}
+
+.about-text {
+  font-size: 1.25rem;
+  padding: .5rem;
+}
+
+.about-sns {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #66D9B3;
+}
+
+.about-sns:hover {
+  opacity: 75%;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 0 3px 20px #FFD55A;
+}
+
+/*MARK: Responsive*/
+
+@media only screen and (max-width: 1500px) {
+
+  .artist {
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+  }
+  
+  .img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .about {
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  .about > h2 {
+    margin: .75rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    margin: -.25rem;
+  }
+  
+  .about-sns {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  * {
+    flex-wrap: wrap;
+  }
+
+  .main {
+    padding: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+    padding: .25rem;
+    margin: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: .25rem;
+  }
+
+  h2 {
+    margin: .5rem;
+  }
+
+  .read-now {
+    margin: -1rem;
+  }
+
+  .info {
+    display: block;
+    padding: 0rem 2rem;
+  }
+
+  .latest {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+  
+  .archive,
+  #randomPg {
+    font-size: .75rem;
+    padding: .25rem;
+  }
+
+  .social-icons {
+    width: 3rem;
+    height: auto;
+    margin: -1rem;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  /*MARK: about artist*/
+  .artist {
+    padding: 1.5rem;
+    margin-bottom: 0rem;
+    position: static;
+    transform: translateX(0);
+  }
+  
+  .img {
+    width: 70%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about {
+    width: 65%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    position: static;
+    transform: translateX(0);
+  }
+  
+  .about-text {
+    font-size: .75rem;
+    margin: -.5rem;
+  }
+  
+  .about-sns {
+    font-size: 1rem;
+  }
+}
