@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/Prepro/logos/PtF logo v1.png">
-  <link rel="stylesheet" href="styles.css">
-  <!--MARK: CHANGE-->
-  <title>EP </title>
-</head>
 
-<!--MARK: CHANGE-->
-<body>
+{{#extends 'index'}}
+
+{{#block "content"}}
+
   <div class="main">
     <h1>EP 00: Title</h1>
 
         <button class="top-btns">Previous</button>
-        <button  class="top-btns" id="randomPg">Random</button>
+        <button class="top-btns" id="randomPg">Random</button>
         <button class="top-btns switch"><a href="04 Page template (Slide).html">Slide</a></button>
         <button class="top-btns">Next</button>
 
@@ -28,5 +20,7 @@
     <h2 class="comment">Comment from creator</h2>
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   </div>
-</body>
-</html>
+
+{{/block}}
+
+{{/extends}}

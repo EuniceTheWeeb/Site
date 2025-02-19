@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="01 Home.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="/Prepro/logos/PtF logo v1.png">
-  <link rel="stylesheet" href="path/to/bootstrap.min.css">
-  <title>Path to Fluency</title>
 
-</head>
+{{#extends 'index'}}
 
-<body>
-  <main>
+{{#block "content"}}
+
+<main>
   <div class="main">
     <h1>About Path to Fluency</h1>
     <p class="info">Monolingual moron tries to learn new languages & cultures... with questionable results.
@@ -81,6 +72,6 @@
   </div>
   </main>
 
-  <script src="path/to/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+{{/block}}
+
+{{/extends}}
