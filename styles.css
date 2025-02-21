@@ -1,0 +1,13 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn
+
+footer {
+  width: 100%;
+  position: fixed;
+  background-color: grey;
+}
