@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
@@ -10,16 +10,57 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-  <title>New Character</title>
-</head>
-<body>
+    <title>New Character</title>
+  </head>
+  <body>
+    <form>
+      <div class="mb-3">
+        <label for="charaPfp" class="form-label">Upload Profile Art</label>
+        <input class="form-control" type="file" id="charaPfp" required />
+      </div>
 
-  
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous"
-></script>
+      <div class="mb-3">
+        <label for="charaName" class="form-label">Character Name</label>
+        <input type="email" class="form-control" id="charaName" required />
+      </div>
+      <div class="mb-3">
+        <label for="charaProfile" class="form-label">Profile</label>
+        <input
+          type="password"
+          class="form-control"
+          id="charaProfile"
+          required
+        />
+      </div>
 
-</body>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="charaNewDetail" />
+        <label class="form-check-label" for="charaNewDetail"
+          >Use this detail for all characters</label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">+ Detail</button>
+
+      <div>
+        <label for="charaSplashArt" class="form-label">Upload Splash Art</label>
+        <input
+          class="form-control form-control-lg"
+          id="charaSplashArt"
+          type="file"
+        />
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="charaPreview" />
+        <label class="form-check-label" for="charaPreview">Preview</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Create Character</button>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
